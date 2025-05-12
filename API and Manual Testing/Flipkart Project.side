@@ -1,0 +1,769 @@
+{
+  "id": "f161586d-700d-43ab-aed4-7033e28ec83a",
+  "version": "2.0",
+  "name": "Flipkart Project",
+  "url": "https://www.flipkart.com/",
+  "tests": [{
+    "id": "df8efedd-1235-4c32-8ae9-d75f5b99cc89",
+    "name": "TC001_Verify product search functionality",
+    "commands": [{
+      "id": "a3b386d4-eb1f-4264-8730-0459aa6e863f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fab50b91-cae3-4f8c-a81c-b4e2a0c9cb96",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "369c7c57-a69d-47f6-aa66-3f5c11aad75c",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.Pke_EE", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div/div/header/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d66a934-d484-4e07-8a97-0efe814cf711",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "229fbae2-03a6-43f2-8f58-d0ba6cacd557",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c016e15-1a18-449a-be06-f0718768ad0e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1aade3e8-6410-492c-896f-5af2d7295304",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.Pke_EE", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div/div/header/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "laptop"
+    }, {
+      "id": "edccd9e2-ae6c-4a5d-b6fa-858cce6fce37",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.Pke_EE", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div/div/header/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "18eb4931-19f6-4b8a-8666-ada8aa282c3a",
+    "name": "Verify Login",
+    "commands": []
+  }, {
+    "id": "7127c9c8-ac1b-46c3-afd7-f33098456759",
+    "name": "TC002_Verify adding product to cart",
+    "commands": [{
+      "id": "e85ec585-fe35-4b1a-9b04-2320449a9c24",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8baf53c2-3c5d-4336-8eb0-2ecfa5dfcd9d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e90f0a5b-cb45-4804-a838-d4e99e2f5511",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_30XB9F",
+      "targets": [
+        ["css=.\\_30XB9F", "css:finder"],
+        ["xpath=//body/div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'✕')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e74e03f-aba0-42e9-b886-6374edf50ace",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Appliances",
+      "targets": [
+        ["linkText=Appliances", "linkText"],
+        ["css=.\\_1ch8e_:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/tvs-and-appliances-new-clp-store?fm=neo%2Fmerchandising&iid=M_6e0ca9e8-f363-434a-ae09-f7e4a680eccb_1_372UD5BXDFYS_MC.LO4IWVHA61BX&otracker=hp_rich_navigation_6_1.navigationCard.RICH_NAVIGATION_Appliances_LO4IWVHA61BX&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_6_L0_view-all&cid=LO4IWVHA61BX')]", "xpath:href"],
+        ["xpath=//div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Appliances')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e145b0c-6ea3-48b3-843d-e2d352bb321c",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.Pke_EE", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div/div/header/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbeea3ec-2931-420f-8a66-7f03c80a1db8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aba2896-717f-4f4a-9061-2850bda10537",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.Pke_EE", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div/div/header/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "LAPTOP"
+    }, {
+      "id": "35deb7cd-6e72-45d4-8b16-1f0f7a60f7e2",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.Pke_EE", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div/div/header/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b3a30d03-fe29-47e7-aea6-e89b7ea41968",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3fe40575-903a-413f-a2ce-14945fa3d867",
+    "name": "All Tests",
+    "commands": []
+  }, {
+    "id": "86f5e42b-6b38-40cc-a8ac-ed77d157f360",
+    "name": "All Remaining Tests",
+    "commands": [{
+      "id": "081315f1-179e-41cb-8980-f43a872c1154",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb6b544d-c4ca-4336-b303-84a56a6ebe0d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86319fef-f191-4399-a8a1-6edfeaa7133d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_1TOQfO > span",
+      "targets": [
+        ["css=.\\_1TOQfO > span", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div/div/header/div[2]/div[2]/div/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0816a424-c50b-464b-a90c-9d5cb023e106",
+      "comment": "",
+      "command": "type",
+      "target": "css=.r4vIwl",
+      "targets": [
+        ["css=.r4vIwl", "css:finder"],
+        ["xpath=//input[@value='9326206722']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/form/div/input", "xpath:position"]
+      ],
+      "value": "9326206722"
+    }, {
+      "id": "24f28f4f-1125-42f4-862e-aa64a0b37887",
+      "comment": "",
+      "command": "click",
+      "target": "css=.QqFHMw",
+      "targets": [
+        ["css=.QqFHMw", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Request OTP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "296c144c-ce4f-4acd-9c02-2a5c4bf22bc9",
+      "comment": "",
+      "command": "type",
+      "target": "css=.\\_5BVqVB:nth-child(1)",
+      "targets": [
+        ["css=.\\_5BVqVB:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='6']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form/div/div/input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "382fbf5e-f975-4a32-9c99-b2cb3efa8573",
+      "comment": "",
+      "command": "type",
+      "target": "css=.I-qZ4M:nth-child(2) > .r4vIwl",
+      "targets": [
+        ["css=.I-qZ4M:nth-child(2) > .r4vIwl", "css:finder"],
+        ["xpath=//input[@value='5']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "09b7a6d9-36f3-4c60-8205-df956193fa97",
+      "comment": "",
+      "command": "type",
+      "target": "css=.I-qZ4M:nth-child(3) > .r4vIwl",
+      "targets": [
+        ["css=.I-qZ4M:nth-child(3) > .r4vIwl", "css:finder"],
+        ["xpath=//input[@value='1']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div/div/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "9f99c2cb-6dd0-4603-8491-3bf53b233b3b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.I-qZ4M:nth-child(4) > .r4vIwl",
+      "targets": [
+        ["css=.I-qZ4M:nth-child(4) > .r4vIwl", "css:finder"],
+        ["xpath=(//input[@value='6'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div/div/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "8cdcf608-d52b-4fc7-b89a-e314bc8d7141",
+      "comment": "",
+      "command": "type",
+      "target": "css=.I-qZ4M:nth-child(5) > .r4vIwl",
+      "targets": [
+        ["css=.I-qZ4M:nth-child(5) > .r4vIwl", "css:finder"],
+        ["xpath=//input[@value='4']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div/div/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "ddffe786-69e6-44f9-a3e7-b016f98bc52e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.I-qZ4M:nth-child(6) > .r4vIwl",
+      "targets": [
+        ["css=.I-qZ4M:nth-child(6) > .r4vIwl", "css:finder"],
+        ["xpath=(//input[@value='6'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div/div/form/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "27e59b0f-68c6-489d-80e9-b1e39e0620e3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Flight Bookings",
+      "targets": [
+        ["linkText=Flight Bookings", "linkText"],
+        ["css=.\\_1ch8e_:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/travel/flights?param=DTNavIcon&fm=neo%2Fmerchandising&iid=M_f4799bf0-1dda-4377-95f6-c6436bffe012_1_372UD5BXDFYS_MC.V4ZPKTOAO321&otracker=hp_rich_navigation_7_1.navigationCard.RICH_NAVIGATION_Flight%2BBookings_V4ZPKTOAO321&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_7_L0_view-all&cid=V4ZPKTOAO321')]", "xpath:href"],
+        ["xpath=//div/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Flight Bookings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18afada7-ca94-4727-bd39-c81cc80543ec",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Flight Bookings",
+      "targets": [
+        ["linkText=Flight Bookings", "linkText"],
+        ["css=.\\_1ch8e_:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/travel/flights?param=DTNavIcon&fm=neo%2Fmerchandising&iid=M_f4799bf0-1dda-4377-95f6-c6436bffe012_1_372UD5BXDFYS_MC.V4ZPKTOAO321&otracker=hp_rich_navigation_7_1.navigationCard.RICH_NAVIGATION_Flight%2BBookings_V4ZPKTOAO321&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_7_L0_view-all&cid=V4ZPKTOAO321')]", "xpath:href"],
+        ["xpath=//div/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Flight Bookings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "475476dd-0d32-4c4c-ab1d-c85136a28cb6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c325d71e-f50c-4c06-aab7-fd7b16683680",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42bccd6c-c664-4ba2-8aef-af0ee56239c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_1ch8e_:nth-child(6) .\\_2puWtW",
+      "targets": [
+        ["css=.\\_1ch8e_:nth-child(6) .\\_2puWtW", "css:finder"],
+        ["xpath=//img[@alt='Appliances']", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/a[3]/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e9d8c27-a98a-4fb6-9cae-1ce5bbfac7a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cPHDOP:nth-child(9) .xcFiqU:nth-child(1) .xTaogf",
+      "targets": [
+        ["css=.cPHDOP:nth-child(9) .xcFiqU:nth-child(1) .xTaogf", "css:finder"],
+        ["xpath=(//img[@alt='WAP'])[2]", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div[3]/div[9]/div/div/a/div/img[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/a/div/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccf10a3e-0d9c-45f6-93e4-364103390ad6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cPHDOP:nth-child(2) div:nth-child(2) .\\_4WELSP",
+      "targets": [
+        ["css=.cPHDOP:nth-child(2) div:nth-child(2) .\\_4WELSP", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div[2]/div/div[2]/div/a/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df52e3bd-2b63-49ea-bef7-1fdbbe94f856",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.cPHDOP:nth-child(2) div:nth-child(2) .\\_4WELSP",
+      "targets": [
+        ["css=.cPHDOP:nth-child(2) div:nth-child(2) .\\_4WELSP", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div[2]/div/div[2]/div/a/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee1bbb7e-ae7d-400c-9d7a-3d361d322313",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cPHDOP:nth-child(2) div:nth-child(2) .DByuf4",
+      "targets": [
+        ["css=.cPHDOP:nth-child(2) div:nth-child(2) .DByuf4", "css:finder"],
+        ["xpath=//img[@alt='EUREKA FORBES 2 in 1 Hand-held Vacuum Cleaner 13,500 Pa Powerful Suction Power, 2-In-1, Handheld & Stick Functions, For Home Use, 16 ft long cord for mobility, Easy Disposal']", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div[2]/div/div[2]/div/a/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02452d4b-da39-47f3-ae02-5a3c831a15aa",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.cPHDOP:nth-child(2) div:nth-child(2) .DByuf4",
+      "targets": [
+        ["css=.cPHDOP:nth-child(2) div:nth-child(2) .DByuf4", "css:finder"],
+        ["xpath=//img[@alt='EUREKA FORBES 2 in 1 Hand-held Vacuum Cleaner 13,500 Pa Powerful Suction Power, 2-In-1, Handheld & Stick Functions, For Home Use, 16 ft long cord for mobility, Easy Disposal']", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div[2]/div/div[2]/div/a/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e426bc28-b803-49f4-8256-5d730da6b98c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cPHDOP:nth-child(2) > .\\_75nlfW > div:nth-child(1) .hl05eU",
+      "targets": [
+        ["css=.cPHDOP:nth-child(2) > .\\_75nlfW > div:nth-child(1) .hl05eU", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div[2]/div/div/div/a[3]/div", "xpath:idRelative"],
+        ["xpath=//a[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a53c25e-24e4-496a-b8eb-0193686aba20",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LIVPURE LIV-PEP-PRO-STAR. 7 L RO + UV + UF + Minerals W...",
+      "targets": [
+        ["linkText=LIVPURE LIV-PEP-PRO-STAR. 7 L RO + UV + UF + Minerals W...", "linkText"],
+        ["css=.cPHDOP:nth-child(2) > .\\_75nlfW > div:nth-child(1) .wjcEIp", "css:finder"],
+        ["xpath=//a[contains(text(),'LIVPURE LIV-PEP-PRO-STAR. 7 L RO + UV + UF + Minerals W...')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div[2]/div[2]/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/livpure-liv-pep-pro-star-7-l-ro-uv-uf-minerals-water-purifier-suitable-all-borewell-tanker-municipality/p/itm5381d87ee314e?pid=WAPFVW6E4ZVTFG6D&lid=LSTWAPFVW6E4ZVTFG6DM0A7XA&marketplace=FLIPKART&store=j9e%2Fabm&srno=b_1_1&otracker=CLP_BannerX3&fm=organic&iid=en_dqpb5z9LTyZe_ntoPlbAhbFNPpOxUU9eYy5PgB69ciKeFLMeleD50rJjZgo37T0BxmwkaaK-xh4P9r7aNu0Nq_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=browse&ppn=browse&ssid=js2chugwq80000001747022172242')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'LIVPURE LIV-PEP-PRO-STAR. 7 L RO + UV + UF + Minerals W...')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5835",
+      "windowTimeout": 2000
+    }, {
+      "id": "3611c863-5675-42d0-89b6-ed12b4d444c2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5835}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f91c206-2fe8-4f9a-bb75-da5708cc282e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.IZexXJ",
+      "targets": [
+        ["css=.IZexXJ", "css:finder"],
+        ["xpath=//img[@alt='LIVPURE LIV-PEP-PRO-STAR. 7 L RO + UV + UF + Minerals Water Purifier Suitable for all - Borewell, Tanker, Municipality Water']", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div/div/div/div/div[2]/div/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60fdec8f-1de6-4fee-802c-72b9576b9ab7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SibU2y .\\_0DkuPH",
+      "targets": [
+        ["css=.SibU2y .\\_0DkuPH", "css:finder"],
+        ["xpath=//img[contains(@src,'https://rukminim2.flixcart.com/image/128/128/xif0q/water-purifier/x/7/8/liv-pep-pro-star-livpure-original-imah87ywyhcyz52k.jpeg?q=70&crop=false')]", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div/div/div/div/div/div/div/ul/li[2]/div/div/img", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7338160b-6669-41f8-ac99-74a65c0928de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_39kFie > .DOjaWF",
+      "targets": [
+        ["css=.\\_39kFie > .DOjaWF", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63704f16-4e7b-4958-a092-13aab977e86f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SibU2y .\\_0DkuPH",
+      "targets": [
+        ["css=.SibU2y .\\_0DkuPH", "css:finder"],
+        ["xpath=//img[contains(@src,'https://rukminim2.flixcart.com/image/128/128/xif0q/water-purifier/0/j/v/liv-pep-pro-star-livpure-original-imah87ywckd7eva9.jpeg?q=70&crop=false')]", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div/div/div/div/div/div/div/ul/li[4]/div/div/img", "xpath:idRelative"],
+        ["xpath=//li[4]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0eeece76-cdad-4b19-8b12-47004da617e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SibU2y .\\_0DkuPH",
+      "targets": [
+        ["css=.SibU2y .\\_0DkuPH", "css:finder"],
+        ["xpath=//img[contains(@src,'https://rukminim2.flixcart.com/image/128/128/xif0q/water-purifier/r/i/q/liv-pep-pro-star-livpure-original-imah87ywjqtnyedj.jpeg?q=70&crop=false')]", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div/div/div/div/div/div/div/ul/li[5]/div/div/img", "xpath:idRelative"],
+        ["xpath=//li[5]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d16545b5-eaa8-4659-863b-bdc1cdf36413",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SibU2y .\\_0DkuPH",
+      "targets": [
+        ["css=.SibU2y .\\_0DkuPH", "css:finder"],
+        ["xpath=//img[contains(@src,'https://rukminim2.flixcart.com/image/128/128/xif0q/water-purifier/b/f/b/liv-pep-pro-star-livpure-original-imah87ywzsqz2ghr.jpeg?q=70&crop=false')]", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div/div/div/div/div/div/div/ul/li[6]/div/div/img", "xpath:idRelative"],
+        ["xpath=//li[6]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9784851-7f74-485d-ab2a-cad51d8a91ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SibU2y .\\_0DkuPH",
+      "targets": [
+        ["css=.SibU2y .\\_0DkuPH", "css:finder"],
+        ["xpath=//img[contains(@src,'https://rukminim2.flixcart.com/image/128/128/xif0q/water-purifier/f/x/b/liv-pep-pro-star-livpure-original-imah87ywe8sy2fhh.jpeg?q=70&crop=false')]", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div/div/div/div/div/div/div/ul/li[7]/div/div/img", "xpath:idRelative"],
+        ["xpath=//li[7]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3745ee0-f9c9-4ec5-8116-59c1c5be8c86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_6gf9Ot",
+      "targets": [
+        ["css=.\\_6gf9Ot", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div/div/div/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc9e5e9a-2d7d-457b-ab15-430a2c33dd9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SibU2y .\\_0DkuPH",
+      "targets": [
+        ["css=.SibU2y .\\_0DkuPH", "css:finder"],
+        ["xpath=//img[contains(@src,'https://rukminim2.flixcart.com/image/128/128/xif0q/water-purifier/n/y/b/liv-pep-pro-star-livpure-original-imah87ywpazvzadh.jpeg?q=70&crop=false')]", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div/div/div/div/div/div/div/ul/li[8]/div/div/img", "xpath:idRelative"],
+        ["xpath=//li[8]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58c071a5-0422-4432-9590-e656fd2b78d7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.XGZdnG:nth-child(1) > .IKoe2r",
+      "targets": [
+        ["css=.XGZdnG:nth-child(1) > .IKoe2r", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div[2]/div[3]/div/div/div[2]/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/account/?rd=0&link=home_account')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3dbbdc8-e285-47e4-ad2f-05a5fcc61496",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_9Wy27C > span",
+      "targets": [
+        ["css=.\\_9Wy27C > span", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div[2]/div[6]/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2d65acc-8e79-435b-ab01-ccc93a204a0f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.\\_9Wy27C > span",
+      "targets": [
+        ["css=.\\_9Wy27C > span", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div[2]/div[6]/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ef16c9a-e856-40da-8030-901e7b9fd989",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Wishlist",
+      "targets": [
+        ["linkText=Wishlist", "linkText"],
+        ["css=.XGZdnG:nth-child(5) > .IKoe2r", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div[2]/div[3]/div/div/div[2]/div[2]/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wishlist?link=home_wishlist')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "425b7f7d-61c9-4aeb-a892-7f8d943690b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.zA2EfJ > span",
+      "targets": [
+        ["css=.zA2EfJ > span", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[2]/div/div/div/div/div[12]/div/form/button/span", "xpath:idRelative"],
+        ["xpath=//form/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe587c60-0950-4f12-bf69-0a89842ce08d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.zA2EfJ > span",
+      "targets": [
+        ["css=.zA2EfJ > span", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[2]/div/div/div/div/div[12]/div/form/button/span", "xpath:idRelative"],
+        ["xpath=//form/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f578804c-951d-4efe-ab1a-2f6f7f8113d7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.zA2EfJ > span",
+      "targets": [
+        ["css=.zA2EfJ > span", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[3]/div/div/div/div/div[12]/div/form/button/span", "xpath:idRelative"],
+        ["xpath=//form/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4803312-13a5-4061-8200-47de46b344fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuhJKm > span",
+      "targets": [
+        ["css=.AuhJKm > span", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div/div[3]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62ac177e-85b0-4132-9b97-f0ab7a53ded9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7864c8ba-3ece-4a69-9b37-ce6a7d13ecfd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.QqFHMw",
+      "targets": [
+        ["css=.QqFHMw", "css:finder"],
+        ["xpath=//div[@id='CNTCTCD5CDE95F6EF4944AE921F499']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a2c8015-b586-45f5-b5c2-2b601c48a897",
+      "comment": "",
+      "command": "click",
+      "target": "css=.QqFHMw",
+      "targets": [
+        ["css=.QqFHMw", "css:finder"],
+        ["xpath=//span[@id='to-payment']/button", "xpath:idRelative"],
+        ["xpath=//span[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'CONTINUE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2b9848e-d6c6-40a3-87c8-d83c4904f38e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_0ofT-K",
+      "targets": [
+        ["css=.\\_0ofT-K", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Accept & Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3f091da-2120-4695-8aac-87c21cc9d092",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3e74168-f8b2-414c-8557-2a41bb76ae02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.QqFHMw",
+      "targets": [
+        ["css=.QqFHMw", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[2]/div/div/div[4]/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4d73743-81b9-456e-9516-f401e0f85362",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.QqFHMw",
+      "targets": [
+        ["css=.QqFHMw", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[2]/div/div/div[4]/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe695d7f-d546-4b2e-bc9a-81d2a7fe6026",
+      "comment": "",
+      "command": "click",
+      "target": "css=.W5mR4e",
+      "targets": [
+        ["css=.W5mR4e", "css:finder"],
+        ["xpath=//img[@alt='Flipkart']", "xpath:img"],
+        ["xpath=//div[@id='container']/div/div/div/div[2]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "829ef0b4-5744-4047-aa20-559b5689cdf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.yx2hEq:nth-child(9) > .AT0fUR",
+      "targets": [
+        ["css=.yx2hEq:nth-child(9) > .AT0fUR", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div/div/div/div/div/div/div/div/div/header/div[2]/div[2]/div/div/div/ul/a[9]/li", "xpath:idRelative"],
+        ["xpath=//a[9]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "aa40026b-58b7-443f-ad32-565c9c7a436c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["df8efedd-1235-4c32-8ae9-d75f5b99cc89"]
+  }],
+  "urls": ["https://www.flipkart.com/"],
+  "plugins": []
+}
